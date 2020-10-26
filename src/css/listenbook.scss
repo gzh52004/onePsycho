@@ -39,3 +39,15 @@
         }
     }
 }
+.listentwo{
+    clear: both;
+    margin-top: vw(150);
+    border: none;
+}
+div .ant-menu-horizontal{
+    border-bottom: none;
+    .midNav{
+        width: 25%;
+        height: vw(160);
+    }
+}

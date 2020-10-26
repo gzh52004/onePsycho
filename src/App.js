@@ -64,7 +64,7 @@ class App extends Component{
       <div>
        
 
-        <Menu mode="horizontal" inlineIndent= {24}onClick= {this.changePath} selectedKeys = {[current]}>
+        <Menu mode="horizontal" className='daohanglan' inlineIndent= {24}onClick= {this.changePath} selectedKeys = {[current]}>
     {view.map(item=><Menu.Item key={item.path}><StrikethroughOutlined/>{item.text}</Menu.Item>)}
     </ Menu>
        
