@@ -12,24 +12,24 @@ import '../css/listenbook.scss'
 // import img4 from '../assets/images/midnav4.jpg'
 class ListenBook extends Component{
         state={
-                // images:[
-                //         {
-                //         key:1,
-                //         imag:require('../assets/images/midnav1.jpg')
-                //         }, 
-                //         {
-                //         key:2,
-                //         imag:require('../assets/images/midnav2.jpg')
-                //         }, 
-                //         {
-                //         key:3,
-                //         imag:require('../assets/images/midnav3.jpg')
-                //         }, 
-                //         {
-                //         key:4,
-                //         imag:require('../assets/images/midnav4.jpg')
-                //         }
-                // ]
+                images:[
+                        {
+                        key:1,
+                        imag:'images/midnav1.jpg'
+                        }, 
+                        {
+                        key:2,
+                        imag:'images/midnav2.jpg'
+                        }, 
+                        {
+                        key:3,
+                        imag:'images/midnav3.jpg'
+                        }, 
+                        {
+                        key:4,
+                        imag:'images/midnav4.jpg'
+                        }
+                ]
         }
 render(){
         const{images} = this.state
@@ -42,8 +42,12 @@ render(){
                         <div className='headersrch'><div><SearchOutlined /></div></div>
                 </div>
         <Menu mode="horizontal" className='listentwo'>
-                      <Menu.Item key='name'  className='midNav'>
-        </Menu.Item>
+        {this.state.images.map(item=><Menu.Item key={item.key} ><img src={item.imag}/></Menu.Item>)}
+                {/* {images.map((item)=>{
+                        return(<Menu.Item key={item.key}  className='midNav'><img src={item.imag}/>
+                        </Menu.Item>)
+                })} */}
+                      
                
         
       </Menu>
