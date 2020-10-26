@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import './vw.scss';
+.am-list-body{
+    color: #6c798c;
+}
+.Logo{
+    width: vw(180);
+    height: vw(300);
+    margin: 0 auto;
+    img{
+        margin-top: vw(100);
+        width: 100%;
+        height: vw(200);
+    }
+}
+.am-checkbox-agree .am-checkbox-agree-label{
+    font-size: vw(10);
+    color: #6c798c;
+    
+}
