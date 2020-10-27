@@ -104,10 +104,10 @@ em {
   width: 24vw;
   height: 40vw;
   margin: 0 auto;
+  padding-top: 6.66667vw;
 }
 
 .Logo img {
-  margin-top: 13.33333vw;
   width: 100%;
   height: 26.66667vw;
 }
@@ -115,6 +115,23 @@ em {
 .am-checkbox-agree .am-checkbox-agree-label {
   font-size: 1.33333vw;
   color: #6c798c;
+}
+
+.LoginReg {
+  color: #6982fa;
+  margin-top: 2.66667vw;
+}
+
+.threeLogin {
+  text-align: center;
+  margin: 2.66667vw 8vw;
+}
+
+.threeLogin .threeimg {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8vw 18.66667vw;
+  border-top: solid #e1ebf1 0.13333vw;
 }
 
 .ok {

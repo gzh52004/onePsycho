@@ -7,8 +7,8 @@
     width: vw(180);
     height: vw(300);
     margin: 0 auto;
+    padding-top: vw(50);
     img{
-        margin-top: vw(100);
         width: 100%;
         height: vw(200);
     }
@@ -17,6 +17,20 @@
     font-size: vw(10);
     color: #6c798c;
     
+}
+.LoginReg{
+    color: #6982fa;
+    margin-top: vw(20);
+}
+.threeLogin{
+    text-align: center;
+    margin: vw(20) vw(60);
+    .threeimg{
+        display: flex;
+        flex-wrap: wrap;
+        padding: vw(60) vw(140);
+        border-top: solid #e1ebf1 vw(1);
+    }
 }
 .ok{
     line-height: vw(50);

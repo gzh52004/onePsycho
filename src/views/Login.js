@@ -30,7 +30,7 @@ class Login extends React.Component {
                 <div className='LoginBox' style={{ margin: 20 }}>
                     <List >
                         <div className='Logo'>
-                            <img src={'https://static.xinli001.com/yimob/static/img/be405c293b90a426ec2eec1d052780a5.png'} alt="标签" />
+                            <img src='images/Log.png' alt="标签" />
                         </div>
                         账号
                         <InputItem
@@ -55,9 +55,18 @@ class Login extends React.Component {
                                 </Flex.Item>
                             </Flex>
                             <Button type="primary" style={{ marginTop: '20px', borderRadius: '25px' }}>登录</Button>
-                            <div onClick={this.changePath}>快速注册</div>
+                            <div className='LoginReg' onClick={this.changePath}>快速注册</div>
                         </List.Item>
                     </List>
+                    <div className='threeLogin'>
+                        <p>第三方登录</p>
+                        <div className='threeimg'>
+                            <img src='images/weixin.svg'/>
+                            <img src='images/qq.svg'/>
+                            <img src='images/weibo.svg'/>
+                            
+                        </div>
+                    </div>  
                 </div>
                 <Switch>
                 
