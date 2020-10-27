@@ -5,6 +5,8 @@ import FirstPage from './views/FirstPage.js'
 import Mine from './views/Mine.js'
 import Study from './views/Study.js'
 import ListenBook from './views/ListenBook.js'
+import Reg from './views/Reg.js'
+import Login from './views/Login.js'
 import './css/APP.css'
 
 import 'antd/dist/antd.css';
@@ -42,6 +44,19 @@ class App extends Component{
       icon:StrikethroughOutlined
     }
   ],
+  viewer:[
+    {
+      text:'登陆',
+      path:'/login',
+      name:'login',
+      component:Login,
+    },{
+      text:'注册',
+      path:'/reg',
+      name:'reg',
+      component:Reg,
+    }
+  ],
   current:'/firstpage'
 }
     changePath =({key})=>{
@@ -59,7 +74,7 @@ class App extends Component{
       })
     }
   render(){
-    const{view,current} = this.state
+    const{view,viewer,current} = this.state
     return ( 
       <div>
        
@@ -72,6 +87,9 @@ class App extends Component{
                 
                 {
                   view.map(item=><Route path={item.path} component={item.component} key={item.name}/>)
+                }
+                {
+                  viewer.map(item=><Route path={item.path} component={item.component} key={item.name}/>)
                 }
                 <Route path= '/notfound' render={()=><h1>404</h1>}/>
                 <Redirect from = '/' to = '/firstpage' exact/>
