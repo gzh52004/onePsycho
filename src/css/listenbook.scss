@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @function vw($px){
     @return($px/750)*100vw;
-}
+} 
 .headerimg{
     height:vw(140);
     width: 50%;
