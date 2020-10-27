@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {HashRouter,Route,Redirect,Switch,NavLink,Link,withRouter} from 'react-router-dom'
 
 import FirstPage from './views/FirstPage.js'
-import Mine from './views/Mine.js'
+import Mine from './views/Mine/Mine.js'
 import Study from './views/Study.js'
 import ListenBook from './views/ListenBook.js'
 import Reg from './views/Reg.js'
