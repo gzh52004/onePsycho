@@ -94,7 +94,7 @@ class App extends Component{
                 <Route path= '/notfound' render={()=><h1>404</h1>}/>
                 <Redirect from = '/' to = '/firstpage' exact/>
                 <Redirect  to="/notfound"/>
-                  </Switch>
+                </Switch>
               </div>
 )
   }
