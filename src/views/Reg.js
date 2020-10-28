@@ -1,6 +1,6 @@
 import React from 'react';
 import {HashRouter,Route,Redirect,Switch,NavLink,Link,withRouter} from 'react-router-dom'
-import { List, InputItem, WhiteSpace, Button,Checkbox, Flex } from 'antd-mobile';
+import { List, InputItem, WhiteSpace, Button,Checkbox, Flex ,ActionSheet, WingBlank, Toast} from 'antd-mobile';
 import 'antd-mobile/dist/antd-mobile.css';
 
 import '../css/Login.scss';
@@ -8,11 +8,19 @@ import Login from './Login.js'
 
 const CheckboxItem = Checkbox.CheckboxItem;
 const AgreeItem = Checkbox.AgreeItem;
+const isIPhone = new RegExp('\\biPhone\\b|\\biPod\\b', 'i').test(window.navigator.userAgent);
+let wrapProps;
+if (isIPhone) {
+  wrapProps = {
+    onTouchStart: e => e.preventDefault(),
+  };
+}
 
 class Reg extends React.Component {
+    
     changePath =()=>{
         // console.log(e)
-       this. props.history.push('/login')
+       this.props.history.push('/login')
     
       }
     // componentDidMount() {
@@ -28,7 +36,7 @@ class Reg extends React.Component {
                 <div className='LoginBox' style={{ margin: 20 }}>
                     <List >
                         <div className='Logo'>
-                            <img src={'https://static.xinli001.com/yimob/static/img/be405c293b90a426ec2eec1d052780a5.png'} alt="标签" />
+                            <img src='images/Log.png' alt="标签" />
                         </div>
                         账号
                         <InputItem
@@ -53,9 +61,18 @@ class Reg extends React.Component {
                                 </Flex.Item>
                             </Flex>
                             <Button type="primary" style={{ marginTop: '20px', borderRadius: '25px' }}>注册</Button>
-                            <div onClick={this.changePath}>快速登录</div>
+                            <div className='LoginReg' onClick={this.changePath}>快速登录</div>
                         </List.Item>
                     </List>
+                    <div className='threeLogin'>
+                        <p>第三方登录</p>
+                        <div className='threeimg'>
+                            <img src='images/weixin.svg'/>
+                            <img src='images/qq.svg'/>
+                            <img src='images/weibo.svg'/>
+                            
+                        </div>
+                    </div>  
                 </div>
                 <Switch>
                 
