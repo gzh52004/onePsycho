@@ -47,7 +47,7 @@
            .Mine_head_one_span{
                font-size: vw(40);
                color: black;
-               margin-left: vw(50);
+               margin-left: vw(34);
                margin-top: vw(20);
             //    padding-left: vw(30);
            }
@@ -64,7 +64,7 @@
                 // margin-bottom: vw(150);
                 text-align: center;
                 .Mine_head_two_li{
-                    font-size: vw(12);
+                    font-size: vw(24);
                     color: darkgray;
                     
                 }
@@ -87,7 +87,29 @@
             // background: #caccca;
             background-image: linear-gradient(to right,#e6dfdf,#afb6af);
             border-radius: vw(20) vw(20) 0 0;
-            margin-bottom: vw(-15);
+            margin-bottom: vw(-20);
+            line-height: vw(76);
+            text-align: center;
+            color: #ffffff;
+            font-size: vw(36);
+            li{
+                span{
+                    margin: 0 vw(4);
+                    // font-size: vw(38);
+                }
+                button{
+                    font-size: vw(28);
+                    border-radius: vw(50);
+                    width: vw(150);
+                    height: vw(54);
+                    border: none;
+                    margin-top: vw(10);
+                    line-height: vw(10);
+                    text-align: center;
+                    padding-left: vw(5);
+                    background-image: linear-gradient(to right,#bab1b1,#545854);
+                }
+            }
         }
         .Mine_content_vip_two{
             height: vw(170);
@@ -95,8 +117,12 @@
             background: #ffffff;
             display: flex;
             justify-content: space-around;
-            line-height: vw(170);
-            
+            line-height: vw(20);
+            padding: vw(50);
+            text-align: center;
+            li{
+                line-height: vw(40);
+            }
         }
     }
     .am-list-item{
@@ -112,5 +138,14 @@
         line-height: vw(100);
         color: red;
         font-size: vw(30);
+        span{
+            margin: 0 vw(8);
+        }
     }
+    .am-list-line{
+        span{
+            margin: 0 vw(14);
+        }
+    }
+    
 }

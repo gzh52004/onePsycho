@@ -150,7 +150,7 @@ em {
 .Mine .Mine_head .Mine_head_one .Mine_head_one_span {
   font-size: 5.33333vw;
   color: black;
-  margin-left: 6.66667vw;
+  margin-left: 4.53333vw;
   margin-top: 2.66667vw;
 }
 
@@ -165,7 +165,7 @@ em {
 }
 
 .Mine .Mine_head .Mine_head_two ul .Mine_head_two_li {
-  font-size: 1.6vw;
+  font-size: 3.2vw;
   color: darkgray;
 }
 
@@ -185,7 +185,28 @@ em {
   height: 13.33333vw;
   background-image: linear-gradient(to right, #e6dfdf, #afb6af);
   border-radius: 2.66667vw 2.66667vw 0 0;
-  margin-bottom: -2vw;
+  margin-bottom: -2.66667vw;
+  line-height: 10.13333vw;
+  text-align: center;
+  color: #ffffff;
+  font-size: 4.8vw;
+}
+
+.Mine .Mine_content_vip .Mine_content_vip_one li span {
+  margin: 0 0.53333vw;
+}
+
+.Mine .Mine_content_vip .Mine_content_vip_one li button {
+  font-size: 3.73333vw;
+  border-radius: 6.66667vw;
+  width: 20vw;
+  height: 7.2vw;
+  border: none;
+  margin-top: 1.33333vw;
+  line-height: 1.33333vw;
+  text-align: center;
+  padding-left: 0.66667vw;
+  background-image: linear-gradient(to right, #bab1b1, #545854);
 }
 
 .Mine .Mine_content_vip .Mine_content_vip_two {
@@ -194,7 +215,13 @@ em {
   background: #ffffff;
   display: flex;
   justify-content: space-around;
-  line-height: 22.66667vw;
+  line-height: 2.66667vw;
+  padding: 6.66667vw;
+  text-align: center;
+}
+
+.Mine .Mine_content_vip .Mine_content_vip_two li {
+  line-height: 5.33333vw;
 }
 
 .Mine .am-list-item {
@@ -211,4 +238,12 @@ em {
   line-height: 13.33333vw;
   color: red;
   font-size: 4vw;
+}
+
+.Mine .Mine_out span {
+  margin: 0 1.06667vw;
+}
+
+.Mine .am-list-line span {
+  margin: 0 1.86667vw;
 }

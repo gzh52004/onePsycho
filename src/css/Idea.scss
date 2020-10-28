@@ -1,0 +1,18 @@
+@import './vw.scss';
+.Idea{
+    background: #e9ebe9;
+    padding: vw(20);
+    .Idea_one{
+        height: vw(50);
+        color: #999;
+        line-height: vw(50);
+        .Idea_one_li{
+            margin-top: vw(55);
+            margin-bottom: vw(55);
+            .ant-radio-button-wrapper{
+                margin: vw(16) vw(20);
+                border-radius: vw(10);    
+            }
+        }
+    }
+}
