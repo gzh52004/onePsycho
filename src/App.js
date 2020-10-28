@@ -9,9 +9,13 @@ import Reg from './views/Reg.js'
 import Login from './views/Login.js'
 import './css/APP.css'
 
+
+
 import 'antd/dist/antd.css';
 import { Menu,Row,Col} from 'antd';
 import {HomeOutlined,UserOutlined,FileSearchOutlined,StrikethroughOutlined} from '@ant-design/icons'
+import Time from './views/Mine/Time.js'
+import Idea from './views/Mine/Idea.js'
 
 @withRouter
 class App extends Component{
@@ -55,6 +59,14 @@ class App extends Component{
       path:'/reg',
       name:'reg',
       component:Reg,
+    },{
+      path:'/time',
+      name:'time',
+      component:Time
+    },{
+      path:'/idea',
+      name:'idea',
+      component:Idea
     }
   ],
   current:'/firstpage'

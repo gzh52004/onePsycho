@@ -1,0 +1,26 @@
+@import './vw.scss';
+
+.site-calendar-demo-card {
+    width: vw(600);
+    border: vw(2) solid #f0f0f0;
+    border-radius: vw(4);
+    text-align: center;
+    margin-left: vw(80);
+  }
+  .time_content{
+      margin-top: vw(30);
+      text-align: center;
+      line-height: vw(80);
+      font-size: vw(38);
+      color: #666666;
+      .time_content_span{
+          font-size: vw(60);
+      }
+      .time_content_span_two{
+          font-size: vw(28);
+      }
+      span{
+          color: #6982fa;
+          margin: 0 vw(20);
+      }
+  }
